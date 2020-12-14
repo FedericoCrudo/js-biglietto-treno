@@ -51,15 +51,18 @@ function biglietti(){
     }
     else {  
         document.getElementById('messageb').innerHTML= '';
+        // minorenni
         if((eta.value>0)&&(eta.value<18)){   
             document.getElementById('result2').innerHTML= 'Il prezzo del biglietto è di: '+(pbase-sconto20)+'€'+ ' '+'(Sconto 20% applicato)'; 
             
         }
+        // over 65
         else if(eta.value>65){
             console.log(sconto20);
             console.log(pbase);
             document.getElementById('result2').innerHTML= 'Il prezzo del biglietto è di: '+(pbase-sconto40)+'€'+ ' '+'(Sconto 20% applicato)'; 
         }
+        // dai 17 ai 68
         else{
             document.getElementById('result2').innerHTML= 'Il prezzo del biglietto è di: '+(pbase)+'€'; 
         }
