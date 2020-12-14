@@ -40,10 +40,18 @@
                        </form>
                 </div>
        </section>
-       <section id="block" class="  m_top_100 ms_text_darkblue">
-        <h2>Operazioni</h2>
+       <section id="block" class="treno m_top_100 ms_text_darkblue">
+        <h2>Biglietti Treno</h2>
         <div class="box m_top_10 operazioni">
-            
+            <div id="messageb"></div>
+            <form action="#treno" class="pd_50">
+                <label for="fname">KM da Percorrere</label>
+                <input type="text" id="km" placeholder="KM">
+                <label class="m_top_10" for="fname">Età passegero </label>
+                <input type="text" id="eta" placeholder="Inserisci Età passegero">
+                <div class="m_top_bott_50" id="result2"></div>
+                <button class="button-green" onclick="biglietti()" class="text_tras_up" type="submit">Calcola</button>
+               </form>
         </div>
     </section>
     </main>
